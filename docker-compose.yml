@@ -1,0 +1,12 @@
+services:
+  app:
+    build: 
+      context: ./Docker-files/app
+    ports: 
+      -  "8080:8080"
+
+  web:
+    build:
+      context: ./Docker-files/web
+    ports:
+      - ""
